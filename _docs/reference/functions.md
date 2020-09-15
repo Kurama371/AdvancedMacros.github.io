@@ -550,16 +550,51 @@ When a sound stops because it has finished playing or has been stopped with the 
 | play                     |                   |                 | Starts or resumes playing of an audio clip.
 | setVolume                | Number            |                 | Sets the volume for the sound. Volume should be between <code>0</code> and <code>1</code>.
 
+### jump
+
+**jump( <Number: millis> )**
+
+Causes the player hold the `jump` keybinding (`space`)
+when millis is...
+
+| Value     | Result                                             |
+|:----------|:---------------------------------------------------|
+|-1           | Hold the jump keybind continuously.                |
+|0             | Cancel's the action                                |
+|millis > 0 | jump keybind is held for that many milliseconds.   |
+
+### left
+
+**left( <Number: millis> )**
+
+Causes the player hold the `left` keybinding (`a`)
+when millis is...
+
+| Value     | Result                                             |
+|:----------|:---------------------------------------------------|
+|-1           | Hold the left keybind continuously.                |
+|0             | Cancel's the action                                |
+|millis > 0 | left keybind is held for that many milliseconds.   |
+
+### log
+
+**log( <Value: v> )**
+
+Prints the provided value into the chat. (only visible to the client)
+
+Supports multiple arguments and minecraft's text formatting.
+
+Example: <code>log("&cHello &a&BWorld!")</code>
+
+
+
 ### getWorld
 ### highlightEntity
 ### httpRequest
 ### isKeyDown
-### jump
 ### key
-### left
 ### listTextures
 ### loader
-### log
 ### look
 ### lookAt
 ### narrate
